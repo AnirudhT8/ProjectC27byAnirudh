@@ -20,6 +20,11 @@ class SlingShot{
         if(this.sling.bodyA){
             var bodyA = this.sling.bodyA.position;
             var pointB = this.sling.pointB.position;
+                 push();
+            stroke(48,22,8);
+            strokeWeight(5);
+            line(pointA.x, pointA.y, pointB.x, pointB.y);
+            pop();
         }
     }
     
